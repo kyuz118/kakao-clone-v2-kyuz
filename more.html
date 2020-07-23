@@ -10,8 +10,6 @@
     <title>More : Kakao Clone</title>
   </head>
   <body>
-
-
     <div class="status-bar">
       <div class="status-bars__column">
         <span class="status-bar__clock">13:54</span>
@@ -25,51 +23,124 @@
       </div>
     </div>
 
-
-
     <header calss="header">
-
       <div class="header__header column">
         <h1 class="header__title">More</h1>
       </div>
-
       <div class="header__header column">
-        <span class="header__icon"> 
-            <i class="fas fa-search"></i>
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-            <i class="fas fa-qrcode"></i>
+          <i class="fas fa-qrcode"></i>
         </span>
         <span class="header__icon">
+          <a href="settings.html">
             <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
-
     </header>
 
-    <nav class=""nav">
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <a href="friend.html" class="nav__list-link">
-                    <i class="far fa-user"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="index.html" class="nav__list-link">
-                    <i class="far fa-comment"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="find.html" class="nav__list-link">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="more.html" class="nav__list-link">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </li>
+    <main class="more">
+      <header class="more__header">
+        <div class="friends__friend friend friend">
+          <!--프로필 사진, 이름, 이메일-->
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <div class="friends__content">
+              <span class="friend__name">kyuz Ko</span>
+              <span class="pans friend__status">kyuz@naver.com</span>
+            </div>
+          </div>
+          <!--버튼-->
+          <div class="friend__column">
+            <i class="far fa-comment-alt fa-2x"></i>
+          </div>
+        </div>
+
+        <!--상단 버튼부, Emotions Themes Account-->
+        <ul class="more__btn-list">
+          <li class="more__btn">
+            <!--Emotions-->
+            <span class="more__btn-icon">
+              <i class="far fa-smile fa-2x"></i>
+            </span>
+            <sapn class="more__btn-title">Emotions</sapn>
+          </li>
+
+          <li class="more__btn">
+            <!--Themes-->
+            <span class="more__btn-icon">
+              <i class="fas fa-brush fa-2x"></i>
+            </span>
+            <sapn class="more__btn-title">Themes</sapn>
+          </li>
+
+          <li class="more__btn">
+            <!--Account-->
+            <span class="more__btn-icon">
+              <i class="fab fa-kickstarter-k fa-2x"></i>
+            </span>
+            <sapn class="more__btn-title">Account</sapn>
+          </li>
         </ul>
+      </header>
+
+      <!--추천어플-->
+      <section class="more__suggestions">
+        <h5 class="more__title">Suggestions</h5>
+        <ul class="more__suggestion-list">
+          <li class="more__suggestion suggestion">
+            <!--Kakao story-->
+            <span class="suggestion__icon">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </span>
+            <span class="sugestion__title">Kakao Story</span>
+          </li>
+
+          <li class="more__suggestion suggestion">
+            <!--Kakao friends-->
+            <span class="suggestion__icon">
+              <i class="fas fa-beer fa-2x"></i>
+            </span>
+            <span class="sugestion__title">Kakao Friends</span>
+          </li>
+
+          <li class="more__suggestion suggestion">
+            <!--Friends Gem-->
+            <span class="suggestion__icon">
+              <i class="fas fa-gamepad fa-2x"></i>
+            </span>
+            <span class="sugestion__title">Friends Gem</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friend.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
   </body>
 </html>

@@ -10,8 +10,6 @@
     <title>Find : Kakao Clone</title>
   </head>
   <body>
-
-
     <div class="status-bar">
       <div class="status-bars__column">
         <span class="status-bar__clock">13:54</span>
@@ -25,50 +23,106 @@
       </div>
     </div>
 
-
-
     <header calss="header">
-
       <div class="header__header column">
         <h1 class="header__title">Find</h1>
       </div>
 
       <div class="header__header column">
-        <span class="header__icon"> 
-            <i class="fas fa-search"></i>
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-            <i class="fas fa-cog"></i>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
-
     </header>
 
-    <nav class=""nav">
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <a href="friend.html" class="nav__list-link">
-                    <i class="far fa-user"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="index.html" class="nav__list-link">
-                    <i class="far fa-comment"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="find.html" class="nav__list-link">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="more.html" class="nav__list-link">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header-list">
+          <li class="find__header-btn header-btn">
+            <!--QR코드 버튼부-->
+            <span class="header btn__icon">
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span class="header-btn__title">QR Code</span>
+          </li>
 
-    
+          <li class="find__header-btn header-btn">
+            <!--주소록 추가 버튼부-->
+            <span class="header btn__icon">
+              <i class="fas fa-user-plus fa-2x"></i>
+            </span>
+            <span class="header-btn__title">Add by Contacts</span>
+          </li>
+
+          <li class="find__header-btn header-btn">
+            <!-- 아이디로 추가 버튼부-->
+            <span class="header btn__icon">
+              <i class="fas fa-passport fa-2x"></i>
+            </span>
+            <span class="header-btn__title">Add by ID</span>
+          </li>
+
+          <li class="find__header-btn header-btn">
+            <!--이메일 초대 버튼부-->
+            <span class="header btn__icon">
+              <i class="far fa-envelope fa-2x"></i>
+            </span>
+            <span class="header-btn__title">Invite</span>
+          </li>
+        </ul>
+      </header>
+
+      <ul class="find__recommended">
+        <h5 class="find__title">
+          Recommended Friends
+        </h5>
+        <li class="find__friend friend friend">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <!--프로필 사진부-->
+            <div class="friends__content">
+              <!--프로필 사진 옆 내용이 들어갈 부분(이름, 상태)-->
+              <span class="friend__name">kyuz Ko</span>
+              <!--친구 이름-->
+            </div>
+          </div>
+
+          <div class="friend__column">
+            <!--친구 추가 버튼-->
+            <div class="friend__add-btn">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friend.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

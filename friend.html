@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/5763644a23.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <title>Friends : Kakao Clone</title>
   </head>
   <body>
-
-
+    <!--화면 상단 스테이터스 바-->
     <div class="status-bar">
       <div class="status-bars__column">
         <span class="status-bar__clock">13:54</span>
@@ -24,69 +24,119 @@
       </div>
     </div>
 
-
-
+    <!--화면 상단부-->
     <header calss="header">
-
       <div class="header__header column">
         <h1 class="header__title">Friends</h1>
       </div>
 
       <div class="header__header column">
-        <span class="header__icon"> 
-            <i class="fas fa-search"></i>
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-            <i class="fas fa-cog"></i>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
-
     </header>
 
     <main class="friends">
+      <!--내 프로필 부분-->
       <header class="friends__header">
-        <li class="friends__friend friend friend--lg"> 
-          <img src="images/avatar.jpg" class="g-avatar friend__avatar">
-          <div class="friends_-content">
-            <span class="friend__name">kyuz Ko</span>
-            <div class="pans friend__status">
-              nomadcpders.co
+        <div class="friends__friend friend friend--lg">
+          <!--다른 사진들과 달리 내사진이 더 크기 때문에 클래스 명을 달리 하였음-->
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <!--프로필 사진부(다른 사진들과 달리 내사진이 더 크다-->
+            <div class="friends__content">
+              <!--프로필 사진 옆 내용이 들어갈 부분(이름, 상태)-->
+              <span class="friend__name">kyuz Ko</span>
+              <!--내 이름-->
+              <span class="pans friend__status">
+                <!--내 상태-->
+                nomadcpders.co
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--플러스 친구 부분-->
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus friend</h5>
+        <!--플러스 친구 제목-->
+        <div class="friends__friend friend friend">
+          <!--플러스친구 프로필이 들어갈 부분-->
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <!--프로필 사진부(다른 사진들과 달리 내사진이 더 크다-->
+            <div class="friends__content">
+              <!--프로필 사진 옆 내용이 들어갈 부분(이름, 상태)-->
+              <span class="friend__name">kyuz Ko</span>
+              <!--내 이름-->
+              <span class="pans friend__status">
+                <!--내 상태-->
+                nomadcpders.co
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--친구 목록 부분-->
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend friend">
+          <!--친구 프로필이 들어갈 부분-->
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <!--프로필 사진부-->
+            <div class="friends__content">
+              <!--프로필 사진 옆 내용이 들어갈 부분(이름, 상태)-->
+              <span class="friend__name">kyuz Ko</span>
+              <!--친구 이름-->
+              <span class="pans friend__status">
+                <!--친구 상태-->
+                nomadcpders.co
+              </span>
+            </div>
+          </div>
+          <!--현재 음악아이콘 위치-->
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                FTISLAND (FT Kyus)
+              </span>
+              <i class="fas play"></i>
             </div>
           </div>
         </li>
-      </header>
-      <div class="friends__plus">
-        <h5 class="friends__plus-title">Plus friend</h5>
-        
-
-      </div>
-      <ul class="friends__list">
       </ul>
     </main>
 
-    <nav class=""nav">
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <a href="friend.html" class="nav__list-link">
-                    <i class="fas fa-user"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="index.html" class="nav__list-link">
-                    <i class="far fa-comment"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="find.html" class="nav__list-link">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="more.html" class="nav__list-link">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </li>
-        </ul>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friend.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
   </body>
 </html>
